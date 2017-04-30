@@ -33,6 +33,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().setTitle("Aplikasi Quiz");
+        getSupportActionBar().setSubtitle("Indonesia Android Kejar Batch 3.0");
+//        getSupportActionBar().setDisplayShowHomeEnabled(true);
+//        getSupportActionBar().setDisplayUseLogoEnabled(true);
+//        getSupportActionBar().setLogo(R.drawable.pp);
 
         //Q1
         cbIniAyam = (CheckBox) findViewById(R.id.cb_ini_ayam);
@@ -83,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
             cekEnam = "6.Salah\n";
         }
-        Toast.makeText(MainActivity.this, "Nilai anda adalah = " + nilai + "\n" + cekSatu + cekDua + cekTiga + cekEmpat + cekLima + cekEnam, Toast.LENGTH_LONG).show();
+        Toast.makeText(MainActivity.this, "Nilai kamu adalah " + nilai + "\n" + cekSatu + cekDua + cekTiga + cekEmpat + cekLima + cekEnam, Toast.LENGTH_LONG).show();
         cekSatu = "1.benar\n";
         cekDua = "2.benar\n";
         cekTiga = "3.benar\n";

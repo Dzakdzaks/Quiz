@@ -4,14 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="10dp"
+    android:layout_margin="10dp"
     android:orientation="vertical"
+    android:background="#ffffff"
     tools:context="com.adventuredeveloper.quiz.MainActivity">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/pp"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -286,16 +291,17 @@
 
         </LinearLayout>
 
+             <Button
+                 android:id="@+id/btnJawaban"
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:layout_gravity="center"
+                 android:background="@color/colorAccent"
+                 android:onClick="logic"
+                 android:text="Cek Jawaban Mu Disini!"
+                 android:textColor="#fff" />
 
-        <Button
-            android:id="@+id/btnJawaban"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:background="@color/colorAccent"
-            android:onClick="logic"
-            android:text="Lihat Nilai"
-            android:textColor="#fff" />
+
 
     </LinearLayout>
 
